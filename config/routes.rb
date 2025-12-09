@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :todos
 
-  get "/projects", to: "projects#index"
-  get "/projects/:title", to: "projects#show", as: "project"
+  resources :projects
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
